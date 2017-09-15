@@ -1,0 +1,63 @@
+p {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3vh;
+    padding-top:10px;
+}
+/*
+p:hover{
+    color:#d6c46b;
+}
+*/
+
+.row {
+    border-left-style:solid;
+    border-right-style:solid;
+   
+}
+a {
+    color: black;
+}
+a:hover{
+    color:#d6c46b
+}
+@media only screen and (max-width: 1200px) {
+    p {
+        font-size: 2vh;
+        padding-top:10px;
+        
+        
+    }
+}
+body{
+    background-color: #d6c46b;
+}
+@media only screen and (max-width: 991px) {
+    p {
+        font-size: 3vw;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-left-style: none;
+        border-right-style: none;
+       
+        
+    }
+    .row{
+        border-left-style: none;
+        border-right-style: none;
+    }
+}
+.col-md-2 {
+    color:black;
+    background-color:#d6c46b;
+    border-left-style:solid;
+    border-right-style:solid;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: color .5s, background-color .5s, text-decoration .5s;
+}
+.col-md-2:hover {
+    color:#d6c46b !important;
+    background-color: black;
+    text-decoration: underline;
+     
+}
