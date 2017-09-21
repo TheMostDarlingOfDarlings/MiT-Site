@@ -1,49 +1,131 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Bootstrap Example</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="main.css">
- <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-
-</head>
+    
+    <head>
+        <title>MiT Homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/servicesstyles.css">
+        <script type="text/javascript" src="js/main.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    </head>
+    
+    
     
     <body>
-        <div class="container">
-            <div class="row">
+        <div id="header" class="row">
+            <div class=col-md-12>
+                <img src="img/logo.png">
+                <h1>web | graphic design | video</h1>
+            </div>
+        </div>
+        
+        
+            
+            <div class="row colouer">
+                <div class="col-md-2 colouer">
+                </div>
+                <div class="col-md-8">
                 <a href="index.html">
-                    <div class="col-md-2">
-                        <p><strong>HOME</strong></p>
+                    <div class="col-md-2 navButton" id="leftNav">
+                        <p class="navText"><strong>HOME</strong></p>
                     </div>
                 </a>
-                <a href="services.html">
-                    <div class="col-md-2">
-                        <p><strong>SERVICES</strong></p>
-                    </div>
+             <a href="services.html">
+                    <div class="col-md-2 navButton">
+                        <p class="navText"><strong>SERVICES</strong></p>
+                     </div>
                 </a>
                 <a href="work.html">
-                    <div class="col-md-2">
-                        <p><strong>OUR WORK</strong></p>
+                    <div class="col-md-2 navButton">
+                        <p class="navText"><strong>OUR WORK</strong></p>
                     </div>
                 </a>
                 <a href="clients.html">
-                    <div class="col-md-2">
-                        <p><strong>CLIENTS</strong></p>
+                    <div class="col-md-2 navButton">
+                        <p class="navText"><strong>CLIENTS</strong></p>
                     </div>
                 </a>
                 <a href="contact.html">
-                    <div class="col-md-2">
-                        <p><strong>CONTACT US</strong></p>
+                    <div class="col-md-2 navButton">
+                        <p class="navText"><strong>CONTACT US</strong></p>
                     </div>
                 </a>
                 <a href="blog.html">
-                    <div class="col-md-2">
-                        <p><strong>BLOG</strong></p>
+                    <div class="col-md-2 navButton" id="rightNav">
+                        <p class="navText"><strong>BLOG</strong></p>
                     </div>
                 </a>
+                </div>
+                <div class="col-md-2 colouer">
+                    
+                </div>
+                
+        </div>
+            
+        
+    <div id=body class=col-md-12>
+        <div id="main-content-wrapper" class="col-md-8">
+            <div class="row">
+                <p class="bodyHeader">Services</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="textHeader">
+                    | web design |
+                    </p>
+                </div>
+                <div class="col-md-6 bodyImg">
+                    <img src="img/350x350.png" class="responsive">
+                </div>
+                <div class="col-md-6">
+                    <p class="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="textHeader">
+                    | graphic design |
+                    </p>
+                </div>
+                <div class="col-md-6 bodyImg">
+                    <img src="img/350x350.png" class="responsive">
+                </div>
+                <div class="col-md-6">
+                    <p class="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="textHeader">
+                    | video |
+                    </p>
+                </div>
+                <div class="col-md-6 bodyImg">
+                <img src="img/350x350.png" class="responsive">
+                </div>
+                <div class="col-md-6">
+                    <p class="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id=footer class=col-md-12> 
+            <div class=col-md-4>©MiT</div>
+            <div class="col-md-4 footerEmail">phs368.mit@gmail.com</div>
+            <div class=col-md-4>
+                <a><img src="img/b_facebook_a.png"></a>
+                <a><img src="img/b_twitter_a.png"></a>
+                <a><img src="img/b_gplus_a.png"></a>
             </div>
         </div>
     </body>
+    
+    
+    
 </html>
