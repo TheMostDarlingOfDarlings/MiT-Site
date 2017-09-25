@@ -16,7 +16,8 @@
     
     
     <body>
-        <div id="header" class="row">
+        <div class=row>
+        <div id="header" class="col-md-12">
             <div class=col-md-12>
                 <img src="img/logo.png">
                 <h1>web | graphic design | video</h1>
@@ -25,7 +26,7 @@
         
         
             
-            <div class="row colouer">
+            <div class="col-md-12 colouer">
                 <div class="col-md-2 colouer">
                 </div>
                 <div class="col-md-8">
@@ -61,7 +62,6 @@
                 </a>
                 </div>
                 <div class="col-md-2 colouer">
-                    <strong>dick</strong>
                 </div>
                 
         </div>
@@ -69,16 +69,51 @@
         
     <div id=body class=col-md-12>
         <div id="main-content-wrapper" class="col-md-8">
-            <div class="col-md-8">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique, lacus at rhoncus interdum, leo massa bibendum est, non gravida purus orci tempor nisl. Vivamus scelerisque sodales felis vitae scelerisque. Ut velit ipsum, semper ut elementum ut, congue ac felis. Vestibulum arcu risus, porttitor nec cursus tempus, blandit sed eros. Curabitur orci magna, feugiat et massa eu, elementum dignissim dolor. Sed lacinia varius posuere. In hac habitasse platea dictumst. Vivamus id rhoncus erat. Vivamus convallis at neque quis tincidunt.
+            <div class="col-md-12">
+                <div id=centerfix>
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
 
-Donec rhoncus, ligula facilisis consequat tincidunt, nisl arcu commodo neque, eu gravida libero ex vitae urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam quis molestie diam. Praesent odio augue, rhoncus eu felis et, pellentesque porta tellus. In non tincidunt massa. Phasellus non vulputate quam, non dapibus purus. Pellentesque vitae venenatis nibh. Sed augue libero, porttitor at augue a, fringilla imperdiet orci. Donec malesuada orci quam, eget pellentesque ante scelerisque sed. Fusce pulvinar tristique ex sit amet tempus. Curabitur eget lacus ante. Cras tincidunt leo in odio volutpat consectetur. Nam tempor venenatis rhoncus. Proin mattis interdum congue. Nunc a magna ac arcu scelerisque rhoncus nec nec augue.
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="img/kitten2.jpg">
+                        </div>
 
-Morbi rhoncus dapibus leo vel bibendum. Ut venenatis condimentum ipsum, ac congue mauris tincidunt ut. Aliquam commodo lobortis mi et volutpat. Vivamus fermentum ullamcorper purus vitae fermentum. Curabitur mollis mauris quis tortor placerat, ut dapibus massa porttitor. Ut condimentum accumsan dolor, ut commodo velit mollis eu. Donec nisl turpis, sagittis in scelerisque in, vestibulum eget lorem. Suspendisse potenti. Proin nec iaculis neque.
+                        <div class="item">
+                          <img src="img/maxresdefault%20(1).jpg">
+                        </div>
 
-Pellentesque ac sapien et ipsum feugiat finibus. Suspendisse congue tellus in ex pharetra dignissim. Sed placerat nunc mi, non consectetur velit maximus ut. Curabitur vitae posuere tellus, sed imperdiet velit. Quisque semper commodo turpis, in mollis turpis placerat sit amet. Vivamus facilisis convallis fermentum. Vivamus ac lorem maximus, porttitor metus at, convallis augue. Duis rhoncus accumsan nisi non blandit. Proin ac urna sodales, congue turpis non, finibus felis. Pellentesque feugiat lorem luctus neque tempus vehicula. Etiam accumsan mauris id nulla faucibus feugiat. Etiam pellentesque, dui sit amet consequat posuere, ante lorem ullamcorper quam, efficitur condimentum lectus odio quis eros. Duis varius dolor sed lacus sodales, vitae viverra risus fringilla. Donec eget urna nulla. Cras auctor accumsan neque, quis hendrerit neque tempor sit amet. Integer dignissim placerat augue sit amet varius.
+                        <div class="item">
+                          <img src="img/maxresdefault_live%20(1).jpg">
+                        </div>
+                      </div>
 
-Morbi quis placerat risus. Nulla aliquam ipsum eget sapien eleifend, vel euismod erat rutrum. Sed gravida lectus quis purus gravida facilisis eu sit amet ante. Aliquam nunc enim, faucibus in elementum sit amet, fringilla ut diam. Pellentesque malesuada sapien varius accumsan luctus. Etiam ultricies libero et eros cursus, at sagittis justo varius. Suspendisse varius nec enim quis accumsan. Aliquam facilisis euismod dignissim. Duis eros dui, gravida euismod purus congue, hendrerit venenatis libero. Suspendisse commodo eu enim a volutpat.</p>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                </div>
+                
+                <h2>About Us</h2>
+                
+                <div class="col-md-12 text-piece"><img class="float-left" src="img/download%20(1).jpg"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>
+                
+                <h2>What We Do</h2>
+                
+                <div class="col-md-12 text-piece"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p><img class="float-left" src="img/download%20(1).jpg"></div>
+                
                 
         </div>
         </div>
@@ -91,6 +126,7 @@ Morbi quis placerat risus. Nulla aliquam ipsum eget sapien eleifend, vel euismod
                 <a><img src="img/b_twitter_a.png"></a>
                 <a><img src="img/b_gplus_a.png"></a>
             </div>
+        </div>
         </div>
     </body>
     

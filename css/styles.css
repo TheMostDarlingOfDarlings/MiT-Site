@@ -86,12 +86,18 @@ body{
     background-color:#6E6E6E;
     display: block;
     margin: 0 auto;
+    color:#fff;
+    font-size: 25px;
 }
 #body{
     display:flex;
+    border-style: none;
 }
 #body > .col-md-8{
     margin: 0 auto;
+}
+.col-md-12 > p{
+    word-wrap: break-word;
 }
 .col-md-8 > p{
     word-wrap: break-word;
@@ -136,10 +142,18 @@ a:hover{
     }
 }
 @media only screen and (max-width: 991px) {
-    p {
+    .navButton > p {
         font-size: 3vw;
         border-bottom-style: solid;
         border-top-style: solid;
+        border-left-style: none;
+        border-right-style: none;
+       
+        
+    }
+    p {
+        border-bottom-style: none;
+        border-top-style: none;
         border-left-style: none;
         border-right-style: none;
        
@@ -166,26 +180,93 @@ a:hover{
 }
 
 
-
-/*ggggggggggggggggggggSLIDESHOWgggggggggggggggggggggg*/
-
-.slideshow-container{
-    background-color: gainsboro;
-    display:flex;
-    
+#main-content-wrapper{
+    background-color:#3B3A44;
+    text-align: center;
+    display: flex;
 }
-
-.slideshow-container > img{
+#main-content-wrapper > .col-md-8{
+    margin: 0 auto;
+}
+.text-piece{
+    display: flex;
+    word-wrap: break-word;
+}
+img{
     max-width:100%;
     object-fit: contain;
 }
-
-.slideshow-container > span{
+h2{
     font-size: 50px;
-    position: relative;
-    bottom: 60px;
-    right: 0px;
+    letter-spacing: 3px;
 }
-#nav{
-    background-color: #D6C46B;
+.float-left{
+    float:left;
+    padding: 0 20px 20px 0;
 }
+.float-right{
+    float:right;
+}
+#footer{
+    color:#000;
+}
+#main-content-wrapper{
+    padding-top: 25px;
+}
+#centerfix{
+    display: flex;
+}
+#centerfix > .slide{
+    margin: 0 auto;
+    width:75%;
+}
+
+/*//////////////////////////////////OUR WORK*/
+
+.work{
+    display: flex;
+    width:95%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    
+}
+.work-aside{
+    padding-left: 20px;
+}
+.large-heading{
+    font-size: 60px;
+    color:#D6C46B;
+}
+.sub{
+    font-size: 16px;
+    color:#D6C46B;
+}
+/*/////////////////////////////////CONTACTS*/
+
+.col-md-10{
+    text-align:center;
+    font size: 25 px;
+}
+.contact-heading{
+    font-size:50px;
+    color:#d6c46b;
+     -webkit-text-fill-color: #d6c46b; 
+    text-align:center;
+    font-family: 'Fjalla One', sans-serif;
+}
+.contact-body {
+    text-align:center;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+hr {
+    width: 70%;
+    border-color:grey;
+}
+.bodyText {
+     font-family: 'Open Sans', sans-serif;
+}
+
+/*/////////////////////////////////SERVICES*/
