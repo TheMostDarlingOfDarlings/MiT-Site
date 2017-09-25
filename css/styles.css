@@ -269,4 +269,9 @@ hr {
      font-family: 'Open Sans', sans-serif;
 }
 
+#main-content-wrapper{
+    background-color:#3B3A44;
+    text-align: center;
+    display: block;
+}
 /*/////////////////////////////////SERVICES*/
