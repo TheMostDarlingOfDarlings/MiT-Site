@@ -246,3 +246,34 @@ hr {
 .footerEmail {
     font-size: 75%;
 }
+.bodyBack {
+    background-color: #3B3A44;
+}
+.contact {
+    text-align: center;
+}
+.textBodyHeader{
+    font-size: 50px;
+}
+.work{
+    display: flex;
+    width:95%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    
+}
+.work-aside{
+    padding-left: 20px;
+}
+.large-heading{
+    font-size: 96px;
+    color:#D6C46B;
+}
+.textSubheader{
+    font-size: 26px;
+    color:#D6C46B;
+}
+.bodyText {
+    color: #fff;
+}
