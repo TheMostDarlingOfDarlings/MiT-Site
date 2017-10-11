@@ -13,7 +13,7 @@
     color: white;
     text-align: left;
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     padding-top:10px;
     margin-bottom: 20px;
 }
@@ -178,6 +178,7 @@ a:hover{
         border-left-style: none;
         border-right-style: none;
     }
+    
 }
 .navButton {
     color:black;
@@ -276,4 +277,32 @@ hr {
 }
 .bodyText {
     color: #fff;
+}
+.indexBody {
+    word-wrap: break-word;
+}
+.text-piece{
+    display: flex;
+    word-wrap: break-word;
+}
+.float-left{
+    float:left;
+    padding: 0 20px 20px 0;
+}
+#main-content-wrapper{
+    padding-top: 25px;
+}
+#centerfix{
+    display: flex;
+}
+#centerfix > .slide{
+    margin: 0 auto;
+    width:75%;
+}
+img{
+    max-width:100%;
+    object-fit: contain;
+}
+.work-aside{
+    padding-left: 20px;
 }
