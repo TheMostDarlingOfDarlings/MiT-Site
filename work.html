@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="css/servicesstyles.css">
         <script type="text/javascript" src="js/main.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
     </head>
     
     
@@ -27,7 +27,7 @@
         
         
               
-<div class="row colouer">
+<div class="row colouer" id="navBar">
                 <div class="col-md-2 colouer">
                 </div>
                 <div class="col-md-8">
@@ -67,6 +67,27 @@
                 </div>
                 
         </div>
+        
+        <script type="text/javascript">
+            jQuery(function($) {
+                function fixDiv() {
+                    var $cache = $('#navBar');
+                    if ($(window).scrollTop() > 290)
+                        $cache.css({
+                            'position': 'fixed',
+                            'top': '0px',
+                            'width': '101.75%'
+                        });
+                    else
+                        $cache.css({
+                            'position': 'relative',
+                            'top': 'auto'
+                        });
+                }
+                $(window).scroll(fixDiv);
+                fixDiv();
+            });
+        </script>
             
         
     <div id=body class=col-md-12>
@@ -74,42 +95,48 @@
             
                 <p class="bodyHeader">Our Work</p>
                 <hr>
-                <div class="col-md-6">
-                    <img src="img/clients_commmunity.png">
+            
+                <div class="col-md-6 frame">
+                    <span class="helper"></span><img src="img/clients_commmunity.png" class="clientsimg">
                 </div>
                 <div class="col-md-6">
-                    <strong class="textBodyHeader bodyText">Ransom Hospital</strong><br>
-                    <strong class="textSubheader">Videos</strong>
+                    <strong class="textBodyHeader bodyHeaderText">Ransom Hospital</strong><br>
+                    <strong class="textSubheaders">Videos</strong>
                     <p class="bodyText">For the Ransom Memorial Hospital, we created many doctor biographies about performing their jobs. It is about their background, area of specialization, and where they received their education. We did this by doing interviews with each individual doctor. Afterwards, we edited the video to make it presentable. We gave the video a proper format with titles, color and hue correction, subtitles, transitions, and various post-production effects.
 </p>
                 </div>
-                <div class="col-md-6">
-                    <img src="img/cuumitypeenis.png">
+            
+            
+                <div class="col-md-6 frame">
+                    <span class="helper"></span><img src="img/cuumitypeenis.png" class="clientsimg">
                 </div>
                 <div class="col-md-6">
-                    <strong class="textBodyHeader bodyText">Paola Community Center</strong><br>
-                    <strong class="textSubheader">Website</strong>
+                    <strong class="textBodyHeader bodyHeaderText">Paola Community Center</strong><br>
+                    <strong class="textSubheaders">Website</strong>
                     <p class="bodyText">We created the website for Paola Community Center.  The website was created by students trained in HTML, Javascript, PHP, and CSS coding. The website includes a homepage, graphics, slideshows, navigation bars, and much more. This website is built to specific customers request and guidelines. As well as creating the website, it is also maintained monthly. 
 </p>
                 </div>
-                <div class="col-md-6">
-                    <img src="img/BEI_map.png">
+            
+                <div class="col-md-6 frame">
+                    <span class="helper"></span><img src="img/BEI_map.png" class="clientsimg">
                 </div>
                 <div class="col-md-6">
-                    <strong class="textBodyHeader bodyText">Blue Eagle Investigations Inc.</strong><br>
-                    <strong class="textSubheader">Coverage Map and Logo</strong>
+                    <strong class="textBodyHeader bodyHeaderText">Blue Eagle Investigations Inc.</strong><br>
+                    <strong class="textSubheaders">Coverage Map and Logo</strong>
                     <p class="bodyText">The MIT team managed to create a logo and a map of the coverage for Blue Eagle Investigations Inc. to the specific request of the client.  These were made, from scratch with royalty-free designs creating a personalized map and logo.  The logo was created by those skilled with Photoshop to meet customer requests.
 </p>
                 </div>
-                <div class="col-md-6">
-                    <img src="img/clients_meme.png">
+            
+                <div class="col-md-6 memes">
+                    <span class="helper"></span><img src="img/clients_meme.png" class="clientsimg">
                 </div>
                 <div class="col-md-6">
-                    <strong class="textBodyHeader bodyText">MeMe’s Tutus</strong><br>
-                    <strong class="textSubheader">Business Card</strong>
+                    <strong class="textBodyHeader bodyHeaderText">MeMe’s Tutus</strong><br>
+                    <strong class="textSubheaders">Business Card</strong>
                     <p class="bodyText">MeMe’s Tutus asked us to make a business card in the past. The card was made using Photoshop and InDesign. The card contained the business name on the front and contact information on the back. The card included graphics provided by the customer at a special request. The final product was reviewed and polished to fit the customer’s wants.
 </p>
                 </div>
+           
             
         </div>
     </div>
