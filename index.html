@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="css/servicesstyles.css">
         <script type="text/javascript" src="js/main.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
     </head>
     
     
@@ -25,8 +27,12 @@
         </div>
         
         
-            
-            <div class="row colouer">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        
+        <div class="row" id="spacer">
+        </div>
+        
+            <div class="row colouer" id="navBar">
                 <div class="col-md-2 colouer">
                 </div>
                 <div class="col-md-8">
@@ -65,6 +71,36 @@
                 </div>
                 
         </div>
+        
+        <script type="text/javascript">
+            jQuery(function($) {
+                function fixDiv() {
+                    var $cache = $('#navBar');
+                    var $spacer = $('#spacer');
+                    if ($(window).scrollTop() > 290) {
+                        $spacer.css({
+                            'display': 'block'
+                        });
+                        $cache.css({
+                            'position': 'fixed',
+                            'top': '0px',
+                            'width': '101.75%'
+                        });
+                    }
+                    else {
+                        $cache.css({
+                            'position': 'relative',
+                            'top': 'auto'
+                        });
+                        $spacer.css({
+                            'display': 'none'
+                        });
+                    }
+                }
+                $(window).scroll(fixDiv);
+                fixDiv();
+            });
+        </script>
             
         
     <div id=body class=col-md-12>
